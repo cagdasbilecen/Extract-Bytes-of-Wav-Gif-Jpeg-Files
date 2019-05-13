@@ -1,12 +1,11 @@
 
-#   Cagdas Bilecen # 2014510015
+#   Cagdas Bilecen 
 
 # FILE PATHS ...
 # use "r" before the path as follows or code will not work...
 pathOfWav = r"C:\Users\cadob\OneDrive\Masaüstü\sample.wav" 
 pathOfGif = r"C:\Users\cadob\OneDrive\Masaüstü\sample.gif"
 pathOfJpeg = r"C:\Users\cadob\OneDrive\Masaüstü\sample.jpg"
-
 
 
 ############ READ WAV FILE ############
@@ -115,6 +114,7 @@ def jpegSize(file):
         s = f.read()
     return s.find(b'\xff\xd9')+2
 
+### to control the jpeg file is edited or not edited ##
 def isEdited(file):
     with open(file, 'rb') as f:
         s = f.read()
